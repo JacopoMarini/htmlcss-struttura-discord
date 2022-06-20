@@ -119,5 +119,10 @@
 .black__footer{
     background-color: black;
     height: 60px;
-    
+}
+
+.hr{
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
 }
