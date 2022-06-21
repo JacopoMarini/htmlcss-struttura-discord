@@ -1,128 +1,141 @@
 *{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
-}
-
-.flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin: 0;
 }
 
 .container{
-    width: 100%;
-    height: 40px;
-    background-color: lightblue;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.yellow{
-    background-color: lightgoldenrodyellow;
-    border: 2px dashed black;
-    height: 16px;
+/* HEADER */
+
+.main-header{
+    padding: 15px 0;
 }
 
-.logo, .login{
-    width: calc(100% / 10);
-}
-
-.link{
-    width: calc(100% / 2);
-}
-
-.blue{
-    background-color: blue;
-    height: 400px;
-}
-
-.fucsia{
-    background-color: fuchsia;
-    height: 360px;
-    width: 500px;
-}
-
-.white{
-    background-color: white;
-    height: 400px;
-}
-
-.turchese{
-    background-color: turquoise;
-    width: 300px;
-    height: 360px;
-}
-
-.pink{
-    background-color: pink;
-    width: 200px;
-    height: 360px;
-}
-
-.grey{
-    background-color: #ccc;
-    height: 400px;
-}
-
-.green{
-    background-color: green;
-    width: 500px;
-    height: 550px;
-}
-
-.large{
-    height: 580px;
-}
-
-.black{
-    background-color: black;
-    height: 400px;
-}
-
-.misura{
+.main-header .nav{
     display: flex;
-    width: 500px;
-    height: 380px;
-    border: 2px dashed grey;
+    flex-wrap: wrap;
 }
 
-.col-1{
-    width: 200px;
-    height: 380px;
-    background-color: orange;
+.main-header .nav .main-menu{
+    flex-grow: 1;
+}
+
+.nav .logo, .cta{
+    width: 20%;
+}
+
+/* HERO */
+.hero-content{
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+/* SEZIONI 60-40 */
+.row{
+    display: flex;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.w-60{
+    flex-basis: 60%;
+}
+
+.w-40{
+    flex-basis: 40%;
+}
+
+.section-col-reverse{
+    flex-direction: row-reverse;
+}
+
+/* COL 100% */
+.w-100{
+    flex-basis: 100%;
+}
+
+/* FOOTER */
+footer #footer-widget{
+    padding: 10px 0 30px;
+    border-bottom: 1px solid white;
+}
+
+footer .row{
+    padding-top: 25px;
+}
+
+.col-4{
+    flex-basis: calc(100% / 3);
 }
 
 .col-2{
-    width: calc(500px/ 6);
-    height: 380px;
-    background-color: cadetblue;
-    border: 2px solid grey;
+    flex-basis: calc(100% / 6);
 }
 
-.container__footer{
-    background-color: aquamarine;
-    width: 500px;
-    height: 40px;
-    margin: 0 auto;
+#colophon .row{
+    padding-top: 15px;
+    padding-bottom: 15px;
     justify-content: space-between;
-    align-items: center;
-
 }
 
-.logo-2, .bottone-2{
-    width: 100px;
-    height: 20px;
-    background-color: lightgoldenrodyellow;
-    padding-top: 20px;
+.section{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.black__footer{
-    background-color: black;
-    height: 60px;
+/* COLORI DI SFONDO */
+
+
+/* DEBUG */
+.debug .row{
+    border: 1px solid cornflowerblue;
+    padding: 10px;
 }
 
-.hr{
-    background-color: black;
-    color: white;
-    padding-bottom: 10px;
+.debug .container{
+    border: 2px solid salmon;
+    padding: 5px;
+}
+
+.debug .nav *{
+    border: 2px solid blue;
+    padding: 30px;
+}
+
+.hero-content{
+    border: 2px solid goldenrod;
+    min-height: 400px;
+}
+
+.debug .col{
+    min-height: 250px;
+    border: 2px solid goldenrod;
+    padding: 30px;
+}
+
+.debug #tech .col{
+    min-height: 400px;
+}
+
+.debug footer{
+    background-color: #333;
+}
+
+.debug header{
+    background-color: cornflowerblue;
+}
+
+.debug #colophon .container *{
+    padding: 20px;
+    border: 2px solid white;
+}
+
+.debug .section{
+    border: 2px solid green;
 }
