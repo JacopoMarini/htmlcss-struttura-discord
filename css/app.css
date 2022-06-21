@@ -90,7 +90,46 @@ footer .row{
 }
 
 /* COLORI DI SFONDO */
+.golden{
+    background-color: goldenrod;
+    border: 1px dashed black;
+}
 
+.blue{
+    background-color: blue;
+}
+
+.fucsia{
+    background-color: fuchsia;
+}
+
+.turchese{
+    background-color: dodgerblue;
+}
+
+.rosa{
+    background-color: pink;
+}
+
+.grigio{
+    background-color: #ccc;
+}
+
+.verde{
+    background-color: green;
+}
+
+.aquamarine{
+    background-color: aquamarine;
+}
+
+.salmon{
+    background-color: salmon;
+}
+
+.cadet{
+    background-color: cadetblue;
+}
 
 /* DEBUG */
 .debug .row{
